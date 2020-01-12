@@ -28,7 +28,11 @@ def sorted_matrix
   # Using Array literal syntax only, build another nested array that 
   # uses the arrays of conventional and organic produce as before.
   # However, this time, sort each internal array alphabetically by the first character
-  
+  array = assembled_matrix
+  for i in 0...array.length() do
+    array[i] = array[i].sort
+  end
+  array
 end
 
 def matrix_lookup(matrix, row, column)
